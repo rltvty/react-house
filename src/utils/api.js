@@ -1,11 +1,10 @@
 // API environment vars
-const API_BASE = ''
+const API_BASE = 'http://localhost:3000'
 
 // Fetch headers + other config options
 const getConfig = (method, body) => {
   let config = {
     method,
-    mode: 'cors',
     headers: {
       'Accept': 'application/json',
       'Content-Type': 'application/json'
@@ -21,7 +20,7 @@ const getConfig = (method, body) => {
 
 // Parses the json body if available
 const handleResponse = (response) => {
-  if (response.ok && response.status === 200) {
+  if (response.ok && response.status >= 200 && response.status < 300) {
 
     return response.text().then(text => {
       return text && JSON.parse(text)
