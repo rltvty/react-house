@@ -8,36 +8,38 @@ class Range extends React.Component {
     super()
 
     this.state = {
-      data: null,
-      level: 0
+      value: 0
     }
   }
 
   componentDidMount = () => {
     Get(this.props.url)
-      .then(res => this.setState({level: res.level}))
+      .then(res => this.setState({value: res.level}))
   }
 
-  handleMessage = (data) => {
-    if (data.name === this.props.name && data.level !== undefined) {
-      this.setState({data: data, level: data.level})
+  handleMessage = ({name, level, volume}) => {
+    if (name !== this.props.name) {
+      return
     }
+
+    level && this.setState({value: level})
+    volume && this.setState({value: volume})
   }
 
   handleInput = (e) => {
-    let level = e.target.value
-    this.setState({level})
+    let value = e.target.value
+    this.setState({value})
   }
 
-  setLevel = () => {
-    Post(this.props.url, {level: this.state.level})
+  setValue = () => {
+    Post(this.props.url, {level: this.state.value})
   }
 
   render () {
     return (
-      <div>
+      <div className='range' id={this.props.name}>
         <Socket onMessage={this.handleMessage} />
-        <input type='range' min='0' max={this.props.max} onChange={this.handleInput} onMouseUp={this.setLevel} value={this.state.level} />
+        <input type='range' min='0' max={this.props.max || 255} onChange={this.handleInput} onMouseUp={this.setValue} value={this.state.value} />
       </div>
     )
   }

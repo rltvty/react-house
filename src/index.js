@@ -1,9 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import { LivingRoom } from './living-room'
+import { Audio } from './audio'
+import { Lights } from './lights'
 
 import 'normalize.css'
 import './index.css'
 
-ReactDOM.render(<LivingRoom />, document.getElementById('root'))
+const App = () => (
+  <div id='app'>
+    <Lights />
+    <Audio />
+  </div>
+)
+
+ReactDOM.render(<App />, document.getElementById('root'))
