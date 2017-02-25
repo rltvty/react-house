@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Range } from 'components/range'
+import { Range } from 'inputs'
 
 const LivingRoom = () => (
   <div className='light'>
