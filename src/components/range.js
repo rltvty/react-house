@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Post } from 'utils/api'
+import { Get, Post } from 'utils/api'
 import { Socket } from 'utils/socket'
 
 class Range extends React.Component {
@@ -11,6 +11,11 @@ class Range extends React.Component {
       data: null,
       level: 0
     }
+  }
+
+  componentDidMount = () => {
+    Get(this.props.url)
+      .then(res => this.setState({level: res.level}))
   }
 
   handleMessage = (data) => {
