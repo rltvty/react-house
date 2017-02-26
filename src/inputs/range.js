@@ -2,6 +2,7 @@ import React from 'react'
 
 import { Get, Post } from 'utils/api'
 import { Socket } from 'utils/socket'
+import './range.css'
 
 class Range extends React.Component {
   constructor () {

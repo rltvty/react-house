@@ -1,16 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-import { Audio } from './audio'
-import { Lights } from './lights'
+import { LivingRoom } from './living_room'
 
 import 'normalize.css'
 import './index.css'
 
 const App = () => (
   <div id='app'>
-    <Lights />
-    <Audio />
+    <LivingRoom />
   </div>
 )
 

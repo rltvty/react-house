@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { Post } from 'utils/api'
+import './button.css'
 
 const Button = ({name, text, url, body}) => {
   const handleClick = () => Post(url, body)

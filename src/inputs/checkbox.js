@@ -17,12 +17,12 @@ class Checkbox extends React.Component {
       .then(res => this.setState({value: res.value}))
   }
 
-  handleMessage = ({name, isPowered}) => {
+  handleMessage = ({name, isMuted}) => {
     if (name !== this.props.name) {
       return
     }
 
-    isPowered && this.setState({value: isPowered})
+    isMuted && this.setState({value: isMuted})
   }
 
   handleInput = (e) => {
