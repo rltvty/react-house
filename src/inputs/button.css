@@ -5,15 +5,13 @@ button {
     background-image: -ms-linear-gradient(top, #377ab7, #2980b9);
     background-image: -o-linear-gradient(top, #377ab7, #2980b9);
     background-image: linear-gradient(to bottom, #377ab7, #2980b9);
-    -webkit-border-radius: 14;
-    -moz-border-radius: 14;
-    border-radius: 14px;
-    font-family: Arial;
+    border-radius: 5px;
     color: #ffffff;
-    font-size: 20px;
-    padding: 10px 20px 10px 20px;
+    font-size: 16px;
+    padding: 5px 20px 4px 20px;
     border: solid #1f628d 1px;
     text-decoration: none;
+    width: 140px;
 }
 
 button:hover {

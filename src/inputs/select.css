@@ -1,0 +1,20 @@
+.select {
+    background-color: #3b8ec2;
+    background-image: url('./select_arrow.png');
+    background-repeat: no-repeat;
+    background-position: 110px 0;
+    height: 29px;
+    overflow: hidden;
+    width: 140px;
+    border-radius: 5px;
+}
+
+.select select {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    height: 29px;
+    padding: 5px; /* If you add too much padding here, the options won't show in IE */
+    width: 168px;
+}
