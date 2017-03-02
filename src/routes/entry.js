@@ -19,7 +19,7 @@ const Entry = () => (
             </div>
             <div className="two_wide">
                 <Button text='Dim' url='/lights/controls/PlumLP-EntryWay' body={{level: 37}} name='dim' />
-                <Button text='Off' url='/lights/controls/PlumLP-EntryWay' body={{level: 1}} name='off' />
+                <Button text='Off' url='/lights/controls/PlumLP-EntryWay' body={{level: 0}} name='off' />
             </div>
             <Range url='/lights/controls/PlumLP-EntryWay' name='PlumLP-EntryWay' />
         </div>
@@ -31,7 +31,7 @@ const Entry = () => (
             </div>
             <div className="two_wide">
                 <Button text='Dim' url='/lights/controls/PlumLP-HalfBath' body={{level: 37}} name='dim' />
-                <Button text='Off' url='/lights/controls/PlumLP-HalfBath' body={{level: 1}} name='off' />
+                <Button text='Off' url='/lights/controls/PlumLP-HalfBath' body={{level: 0}} name='off' />
             </div>
             <Range url='/lights/controls/PlumLP-HalfBath' name='PlumLP-HalfBath' />
         </div>

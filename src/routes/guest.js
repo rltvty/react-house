@@ -9,7 +9,7 @@ const Guest = () => (
         <div className="control_group">
             <div className="two_wide">
                 <Button text='Dim' url='/lights/controls/PlumLP-GuestBath' body={{level: 37}} name='auto_bath' />
-                <Button text='Off' url='/lights/controls/PlumLP-GuestBath' body={{level: 1}} name='off_bath' />
+                <Button text='Off' url='/lights/controls/PlumLP-GuestBath' body={{level: 0}} name='off_bath' />
             </div>
             <Range url='/lights/controls/PlumLP-GuestBath' name='PlumLP-GuestBath' />
         </div>
@@ -21,7 +21,7 @@ const Guest = () => (
             </div>
             <div className="two_wide">
                 <Button text='Dim' url='/lights/controls/PlumLP-GuestBed' body={{level: 37}} name='dim' />
-                <Button text='Off' url='/lights/controls/PlumLP-GuestBed' body={{level: 1}} name='off' />
+                <Button text='Off' url='/lights/controls/PlumLP-GuestBed' body={{level: 0}} name='off' />
             </div>
             <Range url='/lights/controls/PlumLP-GuestBed' name='PlumLP-GuestBed' />
         </div>

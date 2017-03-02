@@ -9,7 +9,7 @@ const Master = () => (
         <div className="control_group">
             <div className="two_wide">
                 <Button text='Dim' url='/lights/controls/PlumLP-MasterBath' body={{level: 37}} name='auto_bath' />
-                <Button text='Off' url='/lights/controls/PlumLP-MasterBath' body={{level: 1}} name='off_bath' />
+                <Button text='Off' url='/lights/controls/PlumLP-MasterBath' body={{level: 0}} name='off_bath' />
             </div>
             <Range url='/lights/controls/PlumLP-MasterBath' name='PlumLP-MasterBath' />
         </div>
@@ -21,7 +21,7 @@ const Master = () => (
             </div>
             <div className="two_wide">
                 <Button text='Dim' url='/lights/controls/PlumLP-MasterBed' body={{level: 37}} name='dim' />
-                <Button text='Off' url='/lights/controls/PlumLP-MasterBed' body={{level: 1}} name='off' />
+                <Button text='Off' url='/lights/controls/PlumLP-MasterBed' body={{level: 0}} name='off' />
             </div>
             <Range url='/lights/controls/PlumLP-MasterBed' name='PlumLP-MasterBed' />
         </div>

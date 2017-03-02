@@ -12,7 +12,7 @@ const Kitchen = () => (
             </div>
             <div className="two_wide">
                 <Button text='Dim' url='/lights/controls/PlumLP-Kitchen' body={{level: 37}} name='dim' />
-                <Button text='Off' url='/lights/controls/PlumLP-Kitchen' body={{level: 1}} name='off' />
+                <Button text='Off' url='/lights/controls/PlumLP-Kitchen' body={{level: 0}} name='off' />
             </div>
             <Range url='/lights/controls/PlumLP-Kitchen' name='PlumLP-Kitchen' />
         </div>
@@ -24,7 +24,7 @@ const Kitchen = () => (
             </div>
             <div className="two_wide">
                 <Button text='Dim' url='/lights/controls/PlumLP-DiningRoom' body={{level: 37}} name='dim' />
-                <Button text='Off' url='/lights/controls/PlumLP-DiningRoom' body={{level: 1}} name='off' />
+                <Button text='Off' url='/lights/controls/PlumLP-DiningRoom' body={{level: 0}} name='off' />
             </div>
             <Range url='/lights/controls/PlumLP-DiningRoom' name='PlumLP-DiningRoom' />
         </div>
