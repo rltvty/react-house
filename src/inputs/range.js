@@ -39,7 +39,7 @@ class Range extends React.Component {
     return (
       <div className='range' id={this.props.name}>
         <Socket onMessage={this.handleMessage} />
-        <input type='range' min='0' max={this.props.max || 255} onChange={this.handleInput} onMouseUp={this.setValue} value={this.state.value} />
+        <input type='range' min='0' max={this.props.max || 255} onChange={this.handleInput} onMouseUp={this.setValue} onTouchEnd={this.setValue} value={this.state.value} />
       </div>
     )
   }
