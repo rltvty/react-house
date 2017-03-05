@@ -7,7 +7,7 @@ class Socket extends React.Component {
   }
 
   componentDidMount () {
-    this.__socket = new WebSocket('ws://localhost:3000/', 'event-stream')
+    this.__socket = new WebSocket('ws://localhost/', 'event-stream')
     this.__socket.addEventListener('message', this.handleMessage)
   }
 
