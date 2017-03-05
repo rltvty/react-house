@@ -1,5 +1,5 @@
 // API environment vars
-const API_BASE = 'http://home'
+const API_BASE = 'http://home:3000'
 
 // Fetch headers + other config options
 const getConfig = (method, body) => {
