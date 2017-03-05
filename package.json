@@ -12,11 +12,12 @@
     "react-dom": "^15.4.2",
     "react-router": "^4.0.0-beta.6",
     "react-router-dom": "^4.0.0-beta.6",
-    "react-simple-dropdown": "^1.1.5"
+    "react-simple-dropdown": "^1.1.5",
+    "sw-precache": "^4.2.2"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && sw-precache --config=sw-precache-config.js",
     "test": "react-scripts test --env=jsdom"
   }
 }
