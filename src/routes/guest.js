@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Button, Checkbox, Range, Select } from 'inputs'
+import { Button, Range } from 'inputs'
 
 const Guest = () => (
     <div className='zone'>

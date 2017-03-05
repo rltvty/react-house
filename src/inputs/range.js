@@ -22,8 +22,8 @@ class Range extends React.Component {
     if (name !== this.props.name) {
       return
     }
-    level != undefined && this.setState({value: level})
-    volume != undefined && this.setState({value: volume})
+    level !== undefined && this.setState({value: level})
+    volume !== undefined && this.setState({value: volume})
   }
 
   handleInput = (e) => {

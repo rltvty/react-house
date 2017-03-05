@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Button, Checkbox, Range, Select } from 'inputs'
+import { Button, Range, Select } from 'inputs'
 
 const Living = () => (
     <div className='zone'>
